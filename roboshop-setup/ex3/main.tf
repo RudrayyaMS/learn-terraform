@@ -5,7 +5,7 @@ data "aws_ami" "ami" {
 
 }
 
- input as map of maps
+ # input as map of maps
 resource "aws_instance" "instances" {
   for_each = var.instances
   ami                    = "ami-0b5a2b5b8f2be4ec2"
