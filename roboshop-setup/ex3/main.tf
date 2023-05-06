@@ -22,11 +22,10 @@ variable "instances" {
       type ="t3.micro"
     }
     user = {
-      user = {
         name  = "user"
         type = "t3.small"
       }
     }
   }
-}
+
 
