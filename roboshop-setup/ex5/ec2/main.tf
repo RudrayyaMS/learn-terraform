@@ -16,7 +16,6 @@ resource "aws_instance" "ec2" {
   }
 }
 
-
 variable "component" {}
 variable "instance_type" {}
 variable "sg_id" {}
