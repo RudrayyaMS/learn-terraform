@@ -10,3 +10,4 @@ resource "aws_route53_record" "record" {
 variable "private_ip" {}
 variable "component" {}
 
+
