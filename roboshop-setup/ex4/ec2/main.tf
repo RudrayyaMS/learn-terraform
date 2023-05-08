@@ -8,7 +8,7 @@ data "aws_ami" "ami" {
 
 # instance creation
 resource "aws_instance" "ec2" {
-  ami = "ami-0b5a2b5b8f2be4ec2"
+  ami = data.aws_ami.ami.image_id
   instance_type = var.instance_type
   vpc_security_group_ids = ["sg-0d55a1e1e3546f2a0"]
   tags = {
