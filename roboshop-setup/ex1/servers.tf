@@ -16,7 +16,7 @@ resource "aws_instance" "frontend" {
 
 resource "aws_route53_record" "frontend" {
   zone_id = "Z0900206KGOHOIP4AMC1"
-  name    = "frontend_dev.devopsm71.online"
+  name    = "frontend-dev.devopsm71.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.frontend.private_ip]
