@@ -20,3 +20,7 @@ resource "aws_instance" "ec2" {
 variable "component" {}
 variable "instance_type" {}
 variable "sg_id" {}
+
+output "private_ip" {
+  value = aws.instance.ec2.private_ip
+}
