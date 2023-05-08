@@ -17,7 +17,7 @@ resource "aws_instance" "ec2" {
 }
 
 # DNS record creation
-resource "aws_route53_record" "frontend" {
+resource "aws_route53_record" "record" {
   zone_id = "Z0900206KGOHOIP4AMC1"
   name    = "$(var.component)_dev.devopsm71.online"
   type    = "A"
