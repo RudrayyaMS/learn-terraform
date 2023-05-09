@@ -13,7 +13,7 @@ resource "aws_instance" "ec2" {
       password = "DevOps321"
     }
 
-    inline [
+    inline = [
       "echo Hello"
     ]
   }
